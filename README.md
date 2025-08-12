@@ -1,69 +1,91 @@
-# React + TypeScript + Vite
+# Vitor Volpi - Growth Marketing Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page showcasing Vitor Volpi's expertise in Growth Marketing, Data Analysis, and Business Intelligence.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Hero Section**: Professional introduction with key statistics
+- **Services**: Detailed service offerings with modern cards
+- **Work Experience**: Professional background and achievements
+- **Contact Form**: Interactive contact section with form
+- **Responsive Design**: Optimized for all devices
+- **Modern CSS**: Contemporary design with gradients and animations
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- Modern CSS with CSS Variables
+- Responsive Grid Layouts
+- CSS Animations and Transitions
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📱 Sections
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Hero**: Professional introduction and call-to-action
+2. **Services**: Growth Marketing, Data Analysis, Web Development, BI
+3. **Work**: Professional experience at companies like iFood, Strada, Usaflex
+4. **Contact**: Contact information and contact form
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Deployment
+
+This project is automatically deployed to GitHub Pages using GitHub Actions.
+
+### GitHub Pages Setup
+
+1. **Repository Settings**: Go to your repository settings
+2. **Pages Section**: Navigate to "Pages" in the left sidebar
+3. **Source**: Select "GitHub Actions" as the source
+4. **Automatic Deployment**: The site will deploy automatically on every push to main
+
+### Manual Deployment
+
+If you prefer manual deployment:
+
+```bash
+# Build the project
+npm run build
+
+# The built files will be in the `dist` folder
+# You can then deploy these files to any hosting service
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Install dependencies
+npm install
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
+
+## 📁 Project Structure
+
+```
+src/
+├── App.tsx          # Main application component
+├── App.css          # Main styles
+├── main.tsx         # Application entry point
+└── assets/          # Static assets
+```
+
+## 🌐 Live Site
+
+The landing page is live at: [https://lleonesouza.github.io/vitor-volpi-lp/](https://lleonesouza.github.io/vitor-volpi-lp/)
+
+## 📧 Contact
+
+- **Email**: volpivitor91@gmail.com
+- **LinkedIn**: [linkedin.com/in/volpivitor](https://www.linkedin.com/in/volpivitor)
+- **Location**: Leme, São Paulo, Brasil
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
